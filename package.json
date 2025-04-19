@@ -1,0 +1,20 @@
+{
+  "name": "cesiumlist",
+  "version": "1.0.0",
+  "description": "# FAQ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NICEPEEK2/Cesium_List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NICEPEEK2/Cesium_List/issues"
+  },
+  "homepage": "https://github.com/NICEPEEK2/Cesium_List#readme"
+}
