@@ -4,7 +4,8 @@
   "description": "# FAQ",
   "main": "index.js",
   "scripts": { 
-  "start": "node index.js"
+  "start": "node index.js",
+  "build": "echo 'No build step required' && exit 0"
   },
   "repository": {
     "type": "git",
