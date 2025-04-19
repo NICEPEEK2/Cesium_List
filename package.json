@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "# FAQ",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Tests not configured\" && exit 0"
+  "scripts": { 
+  "start": "node index.js"
   },
   "repository": {
     "type": "git",
