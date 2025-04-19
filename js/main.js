@@ -1,4 +1,4 @@
-import routes from 'routes.js';
+import routes from '../js/routes.js';
 
 export const store = Vue.reactive({
     dark: JSON.parse(localStorage.getItem('dark')) || false,
