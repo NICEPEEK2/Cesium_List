@@ -147,8 +147,12 @@ export default {
     }),
     computed: {
         level() {
-            return this.list[this.selected][0];
-        },
+            if (!this.list || this.list.length <= this.selected) {
+              return null;
+            }
+            const selectedItem = this.list[this.selected];
+            return selectedItem ? selectedItem[0] : null;
+          },
         video() {
             if (!this.level.showcase) {
                 return embed(this.level.verification);
