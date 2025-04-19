@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "# FAQ",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Tests not configured\" && exit 0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NICEPEEK2/Cesium_List.git"
