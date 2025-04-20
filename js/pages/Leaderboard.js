@@ -8,7 +8,7 @@ export default {
         Spinner,
     },
     data: () => ({
-        leaderboard: [],
+        Leaderboard: [],
         loading: true,
         selected: 0,
         err: [],
@@ -17,8 +17,8 @@ export default {
         <main v-if="loading">
             <Spinner></Spinner>
         </main>
-        <main v-else class="page-leaderboard-container">
-            <div class="page-leaderboard">
+        <main v-else class="page-Leaderboard-container">
+            <div class="page-Leaderboard">
                 <div class="error-container">
                     <p class="error" v-if="err.length > 0">
                         Leaderboard may be incorrect, as the following levels could not be loaded: {{ err.join(', ') }}
@@ -26,7 +26,7 @@ export default {
                 </div>
                 <div class="board-container">
                     <table class="board">
-                        <tr v-for="(ientry, i) in leaderboard">
+                        <tr v-for="(ientry, i) in Leaderboard">
                             <td class="rank">
                                 <p class="type-label-lg">#{{ i + 1 }}</p>
                             </td>
@@ -94,14 +94,14 @@ export default {
     `,
     computed: {
         entry() {
-            return this.leaderboard[this.selected];
+            return this.Leaderboard[this.selected];
         },
     },
     async mounted() {
-        const [leaderboard, err] = await fetchLeaderboard();
-        this.leaderboard = leaderboard;
+        const [Leaderboard, err] = await fetchLeaderboard();
+        this.Leaderboard = Leaderboard;
         this.err = err;
-        // Hide loading spinner
+        // HIde loading spinner
         this.loading = false;
     },
     methods: {

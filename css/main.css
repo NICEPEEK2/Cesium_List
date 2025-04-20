@@ -1,10 +1,10 @@
 :root {
-    --color-background: white;
+    --color-background: rgb(0, 122, 131);
     --color-on-background: black;
-    --color-background-hover: #eee;
+    --color-background-hover: #ffffff;
     --color-on-background-hover: black;
     --color-primary: #00c4c4;
-    --color-on-primary: white;
+    --color-on-primary: rgb(255, 255, 255);
     --color-error: #de0000;
     --color-on-error: white;
 }
@@ -16,7 +16,7 @@ header.dark {
     --color-on-background: white;
     --color-background-hover: #27262c;
     --color-on-background-hover: white;
-    --color-primary: #00b3b3;
+    --color-primary: #1f3b3c;
     --color-primary-disabled: #1f213c;
     --color-on-primary: white;
     --color-error: #de0000;
@@ -38,8 +38,8 @@ header,
 main {
     background-color: var(--color-background);
     color: var(--color-on-background);
-    display: grid;
-    grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 2fr) minmax(
+    display: grId;
+    grId-template-columns: minmax(16rem, 1fr) minmax(16rem, 2fr) minmax(
             16em,
             1fr
         );
@@ -53,9 +53,9 @@ header {
     background-color: var(--color-primary);
     color: var(--color-on-primary);
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-wIdth: 1366px) {
     header {
-        display: grid;
+        display: grId;
         padding-inline: 0;
     }
 }
@@ -73,8 +73,8 @@ header .nav {
 main {
     height: 0;
     flex: 1;
-    display: grid;
-    grid-template-rows: minmax(0, 1fr);
+    display: grId;
+    grId-template-rows: minmax(0, 1fr);
     column-gap: 2rem;
 }
 main > div {
@@ -85,12 +85,12 @@ main > div {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-column: span 3;
+    grId-column: span 3;
 }
 
 input[type="checkbox"] {
     height: 1.25rem;
-    width: 1.25rem;
+    wIdth: 1.25rem;
     cursor: pointer;
     margin: 0;
 }

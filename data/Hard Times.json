@@ -1,14 +1,14 @@
 {
-    "id": 3,
+    "Id": 3,
     "name": "Hard Times",
     "author": "NICEPEEK",
-    "creators": ["RTXOFF, NICEPEEK"],
-    "verifier": "NICEPEEK",
-    "verification": "",
-    "showcase": "https://www.youtube.com/watch?v=cLlaZPq03Rs",
+    "Создатели": ["RTXOFF, NICEPEEK"],
+    "Верифер": "NICEPEEK",
+    "Верификация": "",
+    "Шоукейс": "https://www.youtube.com/watch?v=cLlaZPq03Rs",
     "percentToQualify": 53,
-    "password": "Not Copyable",
-    "records": [
+    "Пароль": "Нельзя скопировать",
+    "Рекорды": [
         {
         }
     ]

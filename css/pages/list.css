@@ -1,26 +1,26 @@
-.page-list .list-container,
-.page-list .level-container,
-.page-list .meta-container {
+.page-List .List-container,
+.page-List .level-container,
+.page-List .meta-container {
     padding-block: 2rem;
 }
-.page-list .list-container {
+.page-List .List-container {
     padding-inline: 1rem;
 }
-.page-list .meta-container {
+.page-List .meta-container {
     padding-right: 2rem;
 }
 
-.page-list .list {
+.page-List .List {
     table-layout: auto;
 }
-.page-list .list .rank {
+.page-List .List .rank {
     text-align: end;
     padding-right: 1rem;
 }
-.page-list .list .level {
-    width: 100%;
+.page-List .List .level {
+    wIdth: 100%;
 }
-.page-list .list .level button {
+.page-List .List .level button {
     background-color: var(--color-background);
     color: var(--color-on-background);
     border: none;
@@ -31,98 +31,98 @@
     overflow-wrap: anywhere;
     cursor: pointer;
 }
-.page-list .list .level.error button {
+.page-List .List .level.error button {
     color: var(--color-error);
     cursor: not-allowed;
     text-decoration: line-through;
 }
-.page-list .list .level button:hover {
+.page-List .List .level button:hover {
     background-color: var(--color-background-hover);
     color: var(--color-on-background-hover);
 }
-.page-list .list .level.active button {
+.page-List .List .level.active button {
     background-color: var(--color-primary);
     color: var(--color-on-primary);
 }
-.page-list .level-container .level {
+.page-List .level-container .level {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding-right: 2rem;
-    max-width: 48rem;
+    max-wIdth: 48rem;
 }
-.page-list .level-container .level .level-authors {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-auto-rows: max-content;
+.page-List .level-container .level .level-authors {
+    display: grId;
+    grId-template-columns: max-content 1fr;
+    grId-auto-rows: max-content;
     gap: 1rem;
 }
-.page-list .level-container .level .video {
+.page-List .level-container .level .vIdeo {
     aspect-ratio: 16/9;
 }
-.page-list .level-container .level .stats {
+.page-List .level-container .level .stats {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     gap: 2rem;
 }
-.page-list .level-container .level .stats li {
+.page-List .level-container .level .stats li {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
-.page-list .level-container .level .records {
+.page-List .level-container .level .Рекорды {
     table-layout: fixed;
 }
-.page-list .level-container .level .records tr td:not(:last-child) {
+.page-List .level-container .level .Рекорды tr td:not(:last-child) {
     padding-right: 1rem;
 }
-.page-list .level-container .level .records .percent,
-.page-list .level-container .level .records .user,
-.page-list .level-container .level .records .hz {
+.page-List .level-container .level .Рекорды .percent,
+.page-List .level-container .level .Рекорды .user,
+.page-List .level-container .level .Рекорды .hz {
     padding-block: 1rem;
 }
-.page-list .level-container .level .records .user {
-    width: 100%;
+.page-List .level-container .level .Рекорды .user {
+    wIdth: 100%;
 }
-.page-list .level-container .level .records .percent,
-.page-list .level-container .level .records .hz {
+.page-List .level-container .level .Рекорды .percent,
+.page-List .level-container .level .Рекорды .hz {
     text-align: end;
 }
-.page-list .meta-container .og a:hover,
-.page-list .level-container .level .records a:hover {
+.page-List .meta-container .og a:hover,
+.page-List .level-container .level .Рекорды a:hover {
     text-decoration: underline;
 }
-.page-list .meta {
+.page-List .meta {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.page-list .meta .errors {
+.page-List .meta .errors {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.page-list .meta .errors .error {
+.page-List .meta .errors .error {
     padding: 1rem;
     background-color: var(--color-error);
     color: var(--color-on-error);
     border-radius: 0.5rem;
 }
-.page-list .meta .editors {
+.page-List .meta .editors {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
-.page-list .meta .editors li {
+.page-List .meta .editors li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-.page-list .meta .editors li img {
+.page-List .meta .editors li img {
     height: 1.25rem;
 }
-.page-list .meta .editors li a:hover {
+.page-List .meta .editors li a:hover {
     text-decoration: underline;
 }

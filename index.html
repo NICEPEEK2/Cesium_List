@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=1024" />
+        <meta name="viewport" content="wIdth=1024" />
         <title>Cesium List</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,11 +14,11 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/typography.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <link rel="stylesheet" type="text/css" href="css/pages/list.css" />
+        <link rel="stylesheet" type="text/css" href="css/pages/List.css" />
         <link
             rel="stylesheet"
             type="text/css"
-            href="css/pages/leaderboard.css"
+            href="css/pages/Leaderboard.css"
         />
         <link rel="stylesheet" type="text/css" href="css/pages/roulette.css" />
         <link rel="stylesheet" type="text/css" href="css/components/nav.css" />
@@ -32,7 +32,7 @@
         <script src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
         <script type="module" src="js/main.js"></script>
     </head>
-    <body id="app">
+    <body Id="app">
         <header :class="{ dark: store.dark }">
             <div class="logo">
                 <h2>Cesium List</h2>
@@ -40,13 +40,10 @@
             </div>
             <nav class="nav">
                 <router-link class="nav__tab" to="/">
-                    <span class="type-label-lg">List</span>
+                    <span class="type-label-lg">Лист</span>
                 </router-link>
-                <router-link class="nav__tab" to="/leaderboard">
-                    <span class="type-label-lg">Leaderboard</span>
-                </router-link>
-                <router-link class="nav__tab" to="/roulette">
-                    <span class="type-label-lg">Roulette</span>
+                <router-link class="nav__tab" to="/Leaderboard">
+                    <span class="type-label-lg">Топ игроков</span>
                 </router-link>
                 <div class="nav__actions">
                     <button
@@ -65,7 +62,7 @@
                         class="nav__cta type-label-lg"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSc0Ef8TOwXxRoo5Dkg8HEaeZKWVpm4jTTIstx4pHavma6zAuw/viewform"
                         target="_blank"
-                        >Submit Record</a
+                        >Опубликовать рекорд</a
                     >
                 </div>
             </nav>

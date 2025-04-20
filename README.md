@@ -9,7 +9,7 @@
 Can I use the Shitty List template?
 
 - I mean, sure. just make sure you give credit somewhere and make sure you state
-  that you're not affiliated with the shitty list.
+  that you're not affiliated with the shitty List.
 
 The website isnt loading! What can I do?
 
@@ -26,14 +26,14 @@ How long will my record take to get accepted?
 - On a normal day it will take 0-48 hours for the record to be accepted,
   sometimes up to 72 hours, which may be slightly common, and if it ever is
   taking more than 72 hours, it will be announced that there is a backup of
-  records or some site issues
+  Рекорды or some site issues
 
 What do New record, update record, and fix record mean?
 
 - new record is when your submitting a record for a level for the first time,
   update record is when you have a record on a level but you got a new best and
   it needs to be updated, fix record is when there is an issue with one of your
-  records that needs to be fixed
+  Рекорды that needs to be fixed
 
 What's an easy way to prove I don't hack?
 
@@ -45,17 +45,17 @@ It's been like more than a week and my record still hasn't been added, what do i
 do?
 
 - You can ask us in
-  [#list-support](https://discord.com/channels/713151800932433972/744151240765603951)
-  , it was probably an accidentally deleted record(yes it happens), accidentally
+  [#List-support](https://discord.com/channels/713151800932433972/744151240765603951)
+  , it was probably an accIdentally deleted record(yes it happens), accIdentally
   deleting the form, your name was mispelled or you were rejected for cheating
 
-When will \_\_\_ be added to the list?
+When will \_\_\_ be added to the List?
 
 - With the way our current system works, the staff and relaibles play the
   levels, if the level gets enough positive opinions from us, it then goes into
   voting, where it is voted on if it will be added
 
-Can i submit Multiple levels on 1 video?
+Can i submit Multiple levels on 1 vIdeo?
 
 - Yes
 
