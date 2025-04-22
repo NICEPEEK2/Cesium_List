@@ -1,7 +1,7 @@
 import list from './pages/List.js';
-import leaderboard from './pages/leaderboard.js';
+import leaderboard from './pages/Leaderboard.js';
 
 export default [
     { path: '/', component: list },
-    { path: '/leaderboard', component: leaderboard },
+    { path: '/Leaderboard', component: leaderboard },
 ];
