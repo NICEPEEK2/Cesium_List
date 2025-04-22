@@ -85,7 +85,7 @@ export default {
                     </table>
                 </div>
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
-                    <p>🎶Банкай говорит что сайт не работает🎶</p>
+                    <p></p>
                 </div>
             </div>
             <div class="meta-container">
