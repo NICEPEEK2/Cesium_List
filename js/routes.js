@@ -1,4 +1,4 @@
-import list from './pages/list.js';
+import list from './pages/List.js';
 import leaderboard from './pages/leaderboard.js';
 
 export default [
