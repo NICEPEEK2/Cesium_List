@@ -1,5 +1,5 @@
 {
-  "name": "cesiumList",
+  "name": "cesiumlist",
   "version": "1.0.0",
   "description": "# FAQ",
   "main": "index.js",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NICEPEEK2/Cesium_List.git"
+    "url": "git+https://github.com/NICEPEEK2/Cesium_list.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NICEPEEK2/Cesium_List/issues"
+    "url": "https://github.com/NICEPEEK2/Cesium_list/issues"
   },
-  "homepage": "https://github.com/NICEPEEK2/Cesium_List#readme"
+  "homepage": "https://github.com/NICEPEEK2/Cesium_list#readme"
 }

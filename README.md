@@ -1,4 +1,4 @@
-# Welcome to the maintained Geometry Dash Shitty List repo!
+# Welcome to the maintained Geometry Dash Shitty list repo!
 
 # FAQ
 
@@ -6,10 +6,10 @@
 
 ### Website FAQ
 
-Can I use the Shitty List template?
+Can I use the Shitty list template?
 
 - I mean, sure. just make sure you give credit somewhere and make sure you state
-  that you're not affiliated with the shitty List.
+  that you're not affiliated with the shitty list.
 
 The website isnt loading! What can I do?
 
@@ -19,7 +19,7 @@ The website isnt loading! What can I do?
 
 ---
 
-### List FAQ
+### list FAQ
 
 How long will my record take to get accepted?
 
@@ -45,11 +45,11 @@ It's been like more than a week and my record still hasn't been added, what do i
 do?
 
 - You can ask us in
-  [#List-support](https://discord.com/channels/713151800932433972/744151240765603951)
+  [#list-support](https://discord.com/channels/713151800932433972/744151240765603951)
   , it was probably an accIdentally deleted record(yes it happens), accIdentally
   deleting the form, your name was mispelled or you were rejected for cheating
 
-When will \_\_\_ be added to the List?
+When will \_\_\_ be added to the list?
 
 - With the way our current system works, the staff and relaibles play the
   levels, if the level gets enough positive opinions from us, it then goes into
@@ -63,7 +63,7 @@ Can i submit Multiple levels on 1 vIdeo?
 
 ## More Coming Soon!
 
-# List Staff Team
+# list Staff Team
 
 ---
 
@@ -76,7 +76,7 @@ Can i submit Multiple levels on 1 vIdeo?
 
 ---
 
-## List Admins:
+## list Admins:
 
 - TravelChimp
 - Prometheus
@@ -89,7 +89,7 @@ Can i submit Multiple levels on 1 vIdeo?
 
 ---
 
-## List Helpers:
+## list Helpers:
 
 - ThinCrust
 - KylashTheKiller
@@ -98,7 +98,7 @@ Can i submit Multiple levels on 1 vIdeo?
 
 ## Server Moderators:
 
-- LBoke
+- lBoke
 - frigusterio
 - Prometheus
 - KylashTheKiller

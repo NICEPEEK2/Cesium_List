@@ -1,16 +1,16 @@
 import { round, score } from './score.js';
 
 /**
- * Path to directory containing `_List.json` and all levels
+ * Path to directory containing `_list.json` and all levels
  */
 const dir = 'data';
 
-export async function fetchList() {
-    const ListResult = await fetch(`${dir}/List.json`);
+export async function fetchlist() {
+    const listResult = await fetch(`${dir}/list.json`);
     try {
-        const List = await ListResult.json();
+        const list = await listResult.json();
         return await Promise.all(
-            List.map(async (path, rank) => {
+            list.map(async (path, rank) => {
                 const levelResult = await fetch(`${dir}/${path}.json`);
                 try {
                     const level = await levelResult.json();
@@ -31,7 +31,7 @@ export async function fetchList() {
             }),
         );
     } catch {
-        console.error(`Failed to load List.`);
+        console.error(`Failed to load list.`);
         return null;
     }
 }
@@ -46,12 +46,12 @@ export async function fetchEditors() {
     }
 }
 
-export async function fetchLeaderboard() {
-    const List = await fetchList();
+export async function fetchleaderboard() {
+    const list = await fetchlist();
 
     const scoreMap = {};
     const errs = [];
-    List.forEach(([level, err], rank) => {
+    list.forEach(([level, err], rank) => {
         if (err) {
             errs.push(err);
             return;
@@ -59,7 +59,7 @@ export async function fetchLeaderboard() {
 
         // Верификация
         const Верифер = Object.keys(scoreMap).find(
-            (u) => u.toLowerCase() === level.Верифер.toLowerCase(),
+            (u) => u.tolowerCase() === level.Верифер.tolowerCase(),
         ) || level.Верифер;
         scoreMap[Верифер] ??= {
             verified: [],
@@ -77,7 +77,7 @@ export async function fetchLeaderboard() {
         // Рекорды
         level.Рекорды.forEach((record) => {
             const user = Object.keys(scoreMap).find(
-                (u) => u.toLowerCase() === record.user.toLowerCase(),
+                (u) => u.tolowerCase() === record.user.tolowerCase(),
             ) || record.user;
             scoreMap[user] ??= {
                 verified: [],

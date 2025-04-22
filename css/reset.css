@@ -16,7 +16,7 @@ ul {
 
 ol,
 ul {
-    List-style: none;
+    list-style: none;
 }
 
 table {
