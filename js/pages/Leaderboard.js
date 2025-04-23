@@ -1,4 +1,4 @@
-import { fetchLeaderboard } from '../content.js';
+import { fetchleaderboard } from '../content.js';
 import { localize } from '../util.js';
 
 import Spinner from '../components/Spinner.js';
@@ -21,7 +21,7 @@ export default {
             <div class="page-leaderboard">
                 <div class="error-container">
                     <p class="error" v-if="err.length > 0">
-                        Leaderboard may be incorrect, as the following levels could not be loaded: {{ err.join(', ') }}
+                        leaderboard may be incorrect, as the following levels could not be loaded: {{ err.join(', ') }}
                     </p>
                 </div>
                 <div class="board-container">
@@ -98,10 +98,10 @@ export default {
         },
     },
     async mounted() {
-        const [leaderboard, err] = await fetchLeaderboard();
+        const [leaderboard, err] = await fetchleaderboard();
         this.leaderboard = leaderboard;
         this.err = err;
-        // Hide loading spinner
+        // HIde loading spinner
         this.loading = false;
     },
     methods: {

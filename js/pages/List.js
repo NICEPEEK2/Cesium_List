@@ -1,10 +1,10 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../score.js";
-import { fetchEditors, fetchList } from "../content.js";
+import { fetchEditors, fetchlist } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
-import LevelAuthors from "../components/List/LevelAuthors.js";
+import levelAuthors from "../components/list/levelAuthors.js"
 
 const roleIconMap = {
     owner: "crown",
@@ -15,7 +15,7 @@ const roleIconMap = {
 };
 
 export default {
-    components: { Spinner, LevelAuthors },
+    components: { Spinner, levelAuthors },
     template: `
         <main v-if="loading">
             <Spinner></Spinner>
@@ -26,7 +26,7 @@ export default {
                     <tr v-for="([level, err], i) in list">
                         <td class="rank">
                             <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
-                            <p v-else class="type-label-lg">Legacy</p>
+                            <p v-else class="type-label-lg">legacy</p>
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }">
                             <button @click="selected = i">
@@ -39,36 +39,36 @@ export default {
             <div class="level-container">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
-                    <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
-                    <div v-if="level.showcase" class="tabs">
-                        <button class="tab type-label-lg" :class="{selected: !toggledShowcase}" @click="toggledShowcase = false">
-                            <span class="type-label-lg">Verification</span>
+                    <levelAuthors :author="level.author" :Создатели="level.Создатели" :Верифер="level.Верифер"></levelAuthors>
+                    <div v-if="level.Шоукейс" class="tabs">
+                        <button class="tab type-label-lg" :class="{selected: !toggledШоукейс}" @click="toggledШоукейс = false">
+                            <span class="type-label-lg">Верификация</span>
                         </button>
-                        <button class="tab" :class="{selected: toggledShowcase}" @click="toggledShowcase = true">
-                            <span class="type-label-lg">Showcase</span>
+                        <button class="tab" :class="{selected: toggledШоукейс}" @click="toggledШоукейс = true">
+                            <span class="type-label-lg">Шоукейс</span>
                         </button>
                     </div>
-                    <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
+                    <iframe class="vIdeo" Id="vIdeoframe" :src="vIdeo" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
-                            <div class="type-title-sm">Points when completed</div>
+                            <div class="type-title-sm">Количество очков за прохождение</div>
                             <p>{{ score(selected + 1, 100, level.percentToQualify) }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">ID</div>
-                            <p>{{ level.id }}</p>
+                            <div class="type-title-sm">Id</div>
+                            <p>{{ level.Id }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">Password</div>
-                            <p>{{ level.password || 'Free to Copy' }}</p>
+                            <div class="type-title-sm">Пароль</div>
+                            <p>{{ level.Пароль || 'Free to Copy' }}</p>
                         </li>
                     </ul>
-                    <h2>Records</h2>
-                    <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
-                    <p v-else-if="selected +1 <= 150"><strong>100%</strong> or better to qualify</p>
-                    <p v-else>This level does not accept new records.</p>
-                    <table class="records">
-                        <tr v-for="record in level.records" class="record">
+                    <h2>Рекорды</h2>
+                    <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> или лучше </p>
+                    <p v-else-if="selected +1 <= 150"><strong>100%</strong> или лучше </p>
+                    <p v-else>This level does not accept new Рекорды.</p>
+                    <table class="Рекорды">
+                        <tr v-for="record in level.Рекорды" class="record">
                             <td class="percent">
                                 <p>{{ record.percent }}%</p>
                             </td>
@@ -85,7 +85,7 @@ export default {
                     </table>
                 </div>
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
-                    <p>(ノಠ益ಠ)ノ彡┻━┻</p>
+                    <p></p>
                 </div>
             </div>
             <div class="meta-container">
@@ -94,10 +94,10 @@ export default {
                         <p class="error" v-for="error of errors">{{ error }}</p>
                     </div>
                     <div class="og">
-                        <p class="type-label-md">Original List by <a href="https://me.redlimerl.com/" target="_blank">RedLime</a></p>
+                        <p class="type-label-md">Original list by <a href="https://me.redlimerl.com/" target="_blank">Redlime</a></p>
                     </div>
                     <template v-if="editors">
-                        <h3>List Editors</h3>
+                        <h3>Редакторы listа</h3>
                         <ol class="editors">
                             <li v-for="editor in editors">
                                 <img :src="\`image/\${roleIconMap[editor.role]}\${store.dark ? '-dark' : ''}.svg\`" :alt="editor.role">
@@ -106,31 +106,40 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h3>Submission Requirements</h3>
+                    <h3>Правила подачи заявки</h3>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
+                       Использовать Читы, megahack и тд можно, однако у вас тогда должен быть включен Cheat индикатор а также мод меню вы должы показать в конце видео с верифом!
                     </p>
                     <p>
-                        Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
+                       Для того чтобы ваш уровень вставили в list вам нужно обязательно это записать это на видео а также у вас должен быть на него рау футаж (Сырой футаж *ссылки на ютуб не принимаем*) тоесть условно полная запись с самого начало до самого окончания. А также запись нельзя редактировать в разных видео редакторах!
                     </p>
                     <p>
-                        Have either source audio or clicks/taps in the video. Edited audio only does not count
+                       Чтобы ваш рекорд попал в list нужно чтобы на вашей записи были слышны клики а также при желании чтобы было больше доверия вы можете записать с hand cam проще говоря чтобы у вас было камера направлена на мышку или на то на чём вы играйте.
                     </p>
                     <p>
-                        The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
+                        Ваше видео дольжно обязательно быть публичное если вы планируйте выкладывать на площадку Youtube.
                     </p>
                     <p>
-                        The recording must also show the player hit the endwall, or the completion will be invalidated.
+                        На записе должны быть показаны количество попыток.
                     </p>
                     <p>
-                        Do not use secret routes or bug routes
+                        Если мы заметим что прохождение уровня вы прошли нечестно и выставляйте за честно то мы имеем полное право вас заблокировать из listа на неограниченный срок!
                     </p>
                     <p>
-                        Do not use easy modes, only a record of the unmodified level qualifies
+                        Уровни начинаю со сложности Insane Demon могут вставится в демон list.
                     </p>
                     <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        За прохождение уровня даются баллы чем легче уровень тем меньше даёться баллов.
                     </p>
+                    <p>
+                        Всего мест в топе 100 дальше уровни которые сложные но уже не влезают в list попадают в beyond list.
+                    </p>
+                    <p>
+                        Нельзя использовать секретные проходы и сваг роуты для прохождение уровня! Такие заявки будут просто игнорироватся!
+                    </p>
+                    <p>
+                       На сайте если уровень в виде просто картинки значит что видео прохождение нету либо утеряно если в виде ссылки на ютуб то это значит что видео прохождение на ютубе.
+                    <p> 
                 </div>
             </div>
         </main>
@@ -143,7 +152,7 @@ export default {
         errors: [],
         roleIconMap,
         store,
-        toggledShowcase: false,
+        toggledШоукейс: false,
     }),
     computed: {
         level() {
@@ -153,21 +162,21 @@ export default {
             const selectedItem = this.list[this.selected];
             return selectedItem ? selectedItem[0] : null;
           },
-        video() {
-            if (!this.level.showcase) {
-                return embed(this.level.verification);
+        vIdeo() {
+            if (!this.level.Шоукейс) {
+                return embed(this.level.Верификация);
             }
 
             return embed(
-                this.toggledShowcase
-                    ? this.level.showcase
-                    : this.level.verification
+                this.toggledШоукейс
+                    ? this.level.Шоукейс
+                    : this.level.Верификация
             );
         },
     },
     async mounted() {
-        // Hide loading spinner
-        this.list = await fetchList();
+        // HIde loading spinner
+        this.list = await fetchlist();
         this.editors = await fetchEditors();
 
         // Error handling

@@ -3,19 +3,19 @@
 }
 .page-leaderboard {
     height: 100%;
-    display: grid;
-    grid-template-columns: minmax(24rem, 2fr) 3fr;
-    grid-template-rows: max-content 1fr;
+    display: grId;
+    grId-template-columns: minmax(24rem, 2fr) 3fr;
+    grId-template-rows: max-content 1fr;
     column-gap: 2rem;
-    max-width: 80rem;
+    max-wIdth: 80rem;
     margin: 0 auto;
 }
 .page-leaderboard > div {
     overflow-y: auto;
 }
 .page-leaderboard .error-container {
-    grid-row: 1;
-    grid-column: 1 / span 2;
+    grId-row: 1;
+    grId-column: 1 / span 2;
 }
 .page-leaderboard .error-container .error {
     padding: 1rem;
@@ -24,7 +24,7 @@
 }
 .page-leaderboard .board-container,
 .page-leaderboard .player-container {
-    grid-row: 2;
+    grId-row: 2;
     padding-block: 2rem;
 }
 .page-leaderboard .board-container {
@@ -33,7 +33,7 @@
 .page-leaderboard .board {
     table-layout: auto;
     display: block;
-    width: 100%;
+    wIdth: 100%;
 }
 .page-leaderboard .board .rank {
     padding-block: 1rem;
@@ -44,7 +44,7 @@
     text-align: end;
 }
 .page-leaderboard .board .user {
-    width: 100%;
+    wIdth: 100%;
 }
 .page-leaderboard .board .user button {
     background-color: var(--color-background);
@@ -86,7 +86,7 @@
     text-align: end;
 }
 .page-leaderboard .player .table .level {
-    width: 100%;
+    wIdth: 100%;
 }
 .page-leaderboard .player .table a:hover {
     text-decoration: underline;

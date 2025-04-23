@@ -18,7 +18,7 @@
     padding-right: 1rem;
 }
 .page-list .list .level {
-    width: 100%;
+    wIdth: 100%;
 }
 .page-list .list .level button {
     background-color: var(--color-background);
@@ -49,15 +49,15 @@
     flex-direction: column;
     gap: 2rem;
     padding-right: 2rem;
-    max-width: 48rem;
+    max-wIdth: 48rem;
 }
 .page-list .level-container .level .level-authors {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-auto-rows: max-content;
+    display: grId;
+    grId-template-columns: max-content 1fr;
+    grId-auto-rows: max-content;
     gap: 1rem;
 }
-.page-list .level-container .level .video {
+.page-list .level-container .level .vIdeo {
     aspect-ratio: 16/9;
 }
 .page-list .level-container .level .stats {
@@ -72,26 +72,26 @@
     align-items: center;
     gap: 1rem;
 }
-.page-list .level-container .level .records {
+.page-list .level-container .level .Рекорды {
     table-layout: fixed;
 }
-.page-list .level-container .level .records tr td:not(:last-child) {
+.page-list .level-container .level .Рекорды tr td:not(:last-child) {
     padding-right: 1rem;
 }
-.page-list .level-container .level .records .percent,
-.page-list .level-container .level .records .user,
-.page-list .level-container .level .records .hz {
+.page-list .level-container .level .Рекорды .percent,
+.page-list .level-container .level .Рекорды .user,
+.page-list .level-container .level .Рекорды .hz {
     padding-block: 1rem;
 }
-.page-list .level-container .level .records .user {
-    width: 100%;
+.page-list .level-container .level .Рекорды .user {
+    wIdth: 100%;
 }
-.page-list .level-container .level .records .percent,
-.page-list .level-container .level .records .hz {
+.page-list .level-container .level .Рекорды .percent,
+.page-list .level-container .level .Рекорды .hz {
     text-align: end;
 }
 .page-list .meta-container .og a:hover,
-.page-list .level-container .level .records a:hover {
+.page-list .level-container .level .Рекорды a:hover {
     text-decoration: underline;
 }
 .page-list .meta {

@@ -10,7 +10,7 @@
     margin: 0;
     background-color: transparent;
     color: var(--color-on-background);
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solId transparent;
 }
 
 .tabs .tab:first-child {
@@ -22,7 +22,7 @@
 }
 
 .tabs .tab.selected{
-    border-bottom: 3px solid var(--color-on-background);
+    border-bottom: 3px solId var(--color-on-background);
 }
 
 .tabs .tab:hover{
