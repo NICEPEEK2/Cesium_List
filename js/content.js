@@ -5,7 +5,7 @@ import { round, score } from './score.js';
  */
 const dir = 'data';
 
-export async function fetchList() {
+export async function fetchlist() {
     const listResult = await fetch(`${dir}/list.json`);
     try {
         const list = await listResult.json();
@@ -18,7 +18,7 @@ export async function fetchList() {
                         {
                             ...level,
                             path,
-                            records: level.records.sort(
+                            Рекорды: level.Рекорды.sort(
                                 (a, b) => b.percent - a.percent,
                             ),
                         },
@@ -46,8 +46,8 @@ export async function fetchEditors() {
     }
 }
 
-export async function fetchLeaderboard() {
-    const list = await fetchList();
+export async function fetchleaderboard() {
+    const list = await fetchlist();
 
     const scoreMap = {};
     const errs = [];
@@ -57,27 +57,27 @@ export async function fetchLeaderboard() {
             return;
         }
 
-        // Verification
-        const verifier = Object.keys(scoreMap).find(
-            (u) => u.toLowerCase() === level.verifier.toLowerCase(),
-        ) || level.verifier;
-        scoreMap[verifier] ??= {
+        // Верификация
+        const Верифер = Object.keys(scoreMap).find(
+            (u) => u.tolowerCase() === level.Верифер.tolowerCase(),
+        ) || level.Верифер;
+        scoreMap[Верифер] ??= {
             verified: [],
             completed: [],
             progressed: [],
         };
-        const { verified } = scoreMap[verifier];
+        const { verified } = scoreMap[Верифер];
         verified.push({
             rank: rank + 1,
             level: level.name,
             score: score(rank + 1, 100, level.percentToQualify),
-            link: level.verification,
+            link: level.Верификация,
         });
 
-        // Records
-        level.records.forEach((record) => {
+        // Рекорды
+        level.Рекорды.forEach((record) => {
             const user = Object.keys(scoreMap).find(
-                (u) => u.toLowerCase() === record.user.toLowerCase(),
+                (u) => u.tolowerCase() === record.user.tolowerCase(),
             ) || record.user;
             scoreMap[user] ??= {
                 verified: [],

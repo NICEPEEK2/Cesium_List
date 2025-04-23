@@ -1,7 +1,7 @@
 :root {
     --color-background: white;
     --color-on-background: black;
-    --color-primary: #0066ff;
+    --color-primary: #1f213c;
     --color-on-primary: white;
 }
 
@@ -11,7 +11,7 @@
 }
 .nav .nav__tab {
     padding-top: 4px;
-    border-bottom: 4px solid transparent;
+    border-bottom: 4px solId transparent;
     display: flex;
     align-items: center;
     padding-inline: 0.5rem;
@@ -31,7 +31,7 @@
 }
 .nav .nav__actions .nav__icon {
     height: 3rem;
-    width: 3rem;
+    wIdth: 3rem;
     border: none;
     background-color: transparent;
     border-radius: 50%;
